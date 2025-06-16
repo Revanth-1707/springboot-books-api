@@ -72,10 +72,13 @@ docker-compose down
 ```
 
 ---
+Great! Here's a section you can **add to your `README.md`** file to instruct users how to create the `application.properties` file securely.
+
+---
 
 ## ⚙️ Configuration
 
-Edit `application.properties`:
+Create a file named application.properties inside src/main/resources/ directory:
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/bookdb
@@ -87,6 +90,13 @@ spring.jpa.show-sql=true
 ```
 
 > Use `update` for development; change to `none` or `validate` in production.
+
+**⚠️ Do not commit this file to the repository.**
+Make sure to add the following line to your `.gitignore`:
+
+```bash
+src/main/resources/application.properties
+```
 
 ---
 
