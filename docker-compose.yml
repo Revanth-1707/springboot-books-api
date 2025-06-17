@@ -8,4 +8,4 @@ services:
       - "5433:5433"
     restart: always
     environment:
-      POSTGRES_PASSWORD: YOUR_SECRET_PASSWORD
+      POSTGRES_PASSWORD: Your_postgress_password
